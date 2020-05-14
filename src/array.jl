@@ -4,6 +4,6 @@ function standardize(array::Array)
     (array .- μ) / σ
 end
 
-function maxprj(array; dims=3)
+function maxprj(array; dims)
     dropdims(maximum(array, dims=dims), dims=dims)
 end
