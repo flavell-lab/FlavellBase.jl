@@ -1,0 +1,4 @@
+name = "FlavellBase"
+uuid = "88015601-1e04-46e4-b006-ffd03bd63f42"
+authors = ["Jungsoo Kim <jungsoo@mit.edu>"]
+version = "0.1.0"
