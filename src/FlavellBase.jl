@@ -8,8 +8,11 @@ include("array.jl")
 export read_txt,
     write_txt,
     create_dir,
-    # array processing
+
+    # array.jl
     standardize,
-    maxprj
+    maxprj,
+    meanprj,
+    map_data
 
 end # module
