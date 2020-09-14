@@ -13,6 +13,7 @@ export read_txt,
     standardize,
     maxprj,
     meanprj,
+    minprj,
     map_data
 
 end # module
