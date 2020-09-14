@@ -21,3 +21,7 @@ end
 function meanprj(A::AbstractArray; dims)
     dropdims(mean(A, dims=dims), dims=dims)
 end
+
+function minprj(A::AbstractArray; dims)
+    dropdims(minimum(A, dims=dims), dims=dims)
+end
