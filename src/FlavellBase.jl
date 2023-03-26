@@ -14,6 +14,9 @@ export read_txt,
     maxprj,
     meanprj,
     minprj,
-    map_data
+    stdprj,
+    medianprj,
+    map_data,
+    aggregate_var
 
 end # module
