@@ -4,6 +4,7 @@ using Statistics
 
 include("io.jl")
 include("array.jl")
+include("dict.jl")
 
 export read_txt,
     write_txt,
@@ -17,6 +18,8 @@ export read_txt,
     stdprj,
     medianprj,
     map_data,
-    aggregate_var
+    aggregate_var,
+    # dict.jl
+    add_list_dict!
 
 end # module
