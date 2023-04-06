@@ -19,6 +19,7 @@ export read_txt,
     medianprj,
     map_data,
     aggregate_var,
+    rescale_to_range
     # dict.jl
     add_list_dict!
 

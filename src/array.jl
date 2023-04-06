@@ -63,3 +63,21 @@ function aggregate_var(data; f_aggregate=mean, f_var=std, dim=2)
     
     y1, y2, y3, u, s
 end
+
+"""
+    rescale_to_range(value, vmin, vmax, cmin=0., cmax=1.)
+
+Rescale `value` to the range [`cmin`, `cmax`] given the range
+[`vmin`, `vmax`].
+
+# Arguments
+- value: value to rescale
+- vmin: minimum value of the range
+- vmax: maximum value of the range
+- cmin: minimum value of the rescaled range
+- cmax: maximum value of the rescaled range
+"""
+function rescale_to_range(value, vmin, vmax, cmin=0., cmax=1.)
+    x_ = clamp(value, vmin, vmax)
+    (cmax - cmin) * (x_ - vmin) / (vmax - vmin) + cmin
+end
